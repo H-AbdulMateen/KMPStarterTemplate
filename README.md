@@ -1,1 +1,1 @@
-Kotlin Multiplatform App with Ntive UIs(JetPack Compose & Swift UI)
+Kotlin Multiplatform App with Native UIs(JetPack Compose & Swift UI)

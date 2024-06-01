@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="welcome_greeting">Welcome back to Home</string>
+    <string name="logout">Logout</string>
+    <string name="sign_up">SignUp</string>
+    <string name="sign_in">SignIn</string>
+</resources>
