@@ -1,4 +1,4 @@
-package com.abdulmateen.kmpstartertemplate.screens.auth.register
+package com.abdulmateen.kmpstartertemplate.screens.auth.sign_up
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 import com.abdulmateen.kmpstartertemplate.android.R
 
 @Composable
-fun RegisterScreen(
+fun SignUpScreen(
     onSignInClick: () -> Unit,
     onSuccessRegistration: () -> Unit
 ) {
@@ -50,7 +50,7 @@ fun RegisterScreen(
 @Preview
 @Composable
 private fun RegisterScreenPreview() {
-    RegisterScreen(
+    SignUpScreen(
         onSignInClick = {},
         onSuccessRegistration = {}
     )

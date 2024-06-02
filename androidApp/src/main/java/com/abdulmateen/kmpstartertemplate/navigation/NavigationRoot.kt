@@ -1,14 +1,13 @@
 package com.abdulmateen.kmpstartertemplate.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.abdulmateen.kmpstartertemplate.screens.auth.login.LoginScreen
-import com.abdulmateen.kmpstartertemplate.screens.auth.register.RegisterScreen
+import com.abdulmateen.kmpstartertemplate.screens.auth.sign_up.SignUpScreen
 import com.abdulmateen.kmpstartertemplate.screens.dashboard.HomeScreen
 
 @Composable
@@ -33,7 +32,7 @@ private fun NavGraphBuilder.authGraph(navController: NavHostController){
         composable(route = ScreenRoute.Login.name){
             LoginScreen(
                 onSignUpClick = {
-                    navController.navigate(ScreenRoute.Register.name)
+                    navController.navigate(ScreenRoute.SignUp.name)
                 },
                 onSignInSuccess = {
                     navController.navigate(GraphRoot.Dashboard.name) {
@@ -44,8 +43,8 @@ private fun NavGraphBuilder.authGraph(navController: NavHostController){
                 }
             )
         }
-        composable(route = ScreenRoute.Register.name){
-            RegisterScreen(
+        composable(route = ScreenRoute.SignUp.name){
+            SignUpScreen(
                 onSignInClick = {
                     navController.navigateUp()
                 },
