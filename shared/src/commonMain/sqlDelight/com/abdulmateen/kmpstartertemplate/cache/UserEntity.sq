@@ -1,0 +1,26 @@
+CREATE TABLE UserEntity (
+    email TEXT NOT NULL,
+    username TEXT NOT NULL,
+    firstName TEXT,
+    lastName TEXT,
+    gender TEXT,
+    id INTEGER,
+    image TEXT,
+    refreshToken TEXT,
+    token TEXT
+);
+
+insertUser:
+INSERT OR REPLACE INTO UserEntity(email, username,firstName, lastName, gender, id, image, refreshToken, token)
+VALUES (?, ?, ?, ?, ?,?,?, ?, ?);
+
+removeAllUsers:
+DELETE FROM UserEntity;
+
+getUserInfo:
+SELECT * FROM UserEntity WHERE id = :userId;
+
+updateUser:
+UPDATE UserEntity
+SET firstName = :firstName, lastName = :lastName, gender = :gender,
+image = :image WHERE id = ?;
